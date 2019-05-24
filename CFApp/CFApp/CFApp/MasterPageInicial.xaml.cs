@@ -27,7 +27,18 @@ namespace CFApp
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;
 
-            Detail = new NavigationPage(page);
+            //Detail = new NavigationPage(page);
+
+            switch (item.Id)
+            {
+                case 0:
+                    Detail = new NavigationPage(new Home());
+                    break;
+                case 1:
+                    Detail = new NavigationPage(new MinhasConsultas());
+                    break;
+            }
+
             IsPresented = false;
 
             MasterPage.ListView.SelectedItem = null;
