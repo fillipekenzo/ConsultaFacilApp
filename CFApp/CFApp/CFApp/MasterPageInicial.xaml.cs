@@ -37,6 +37,9 @@ namespace CFApp
                 case 1:
                     Detail = new NavigationPage(new MinhasConsultas());
                     break;
+                case 2:
+                    Detail = new NavigationPage(new MarcarConsulta());
+                    break;
             }
 
             IsPresented = false;

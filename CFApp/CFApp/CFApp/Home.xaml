@@ -4,6 +4,6 @@
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="CFApp.Home" Title="Home">
     <StackLayout VerticalOptions="StartAndExpand">
-        <maps:Map MapType="Hybrid" HeightRequest="320"/>
+        <maps:Map MapType="Street" HeightRequest="600"/>
     </StackLayout>
 </ContentPage>

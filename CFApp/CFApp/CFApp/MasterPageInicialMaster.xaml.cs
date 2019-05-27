@@ -34,7 +34,8 @@ namespace CFApp
                 MenuItems = new ObservableCollection<MasterPageInicialMenuItem>(new[]
                 {
                     new MasterPageInicialMenuItem { Id = 0, Title = "Home" },
-                    new MasterPageInicialMenuItem { Id = 1, Title = "Minhas Consultas" }
+                    new MasterPageInicialMenuItem { Id = 1, Title = "Minhas Consultas" },
+                    new MasterPageInicialMenuItem { Id = 2, Title = "Marcar Consultas" }
                 });
             }
             
