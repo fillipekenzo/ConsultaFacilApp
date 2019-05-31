@@ -3,10 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CFApp.MarcarConsulta">
     <ContentPage.Content>
+        
+        
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Picker x:Name="pckPosto" HorizontalOptions="FillAndExpand" Title="Selecione o Posto">
+                <Picker.Items>
+                    <x:String>Posto 26 de Agosto</x:String>
+                    <x:String>Posto Coronel Antonino</x:String>
+                    <x:String>Posto Nova Bahia</x:String>
+                </Picker.Items>
+                   </Picker>
+            
+            <Picker x:Name="TipodeConsulta" HorizontalOptions="FillAndExpand" Title="Selecione o Tipo de Consulta"  >
+                <Picker.Items>
+                    <x:String>Clinico Geral</x:String>
+                    <x:String>Pediatra</x:String>
+                    <x:String>Ginecologista</x:String>
+                    <x:String>Odontolista</x:String>
+                </Picker.Items>
+            </Picker>
+            
+            <DatePicker />
+            <TimePicker />
+            
+            <Button   Text="Marcar" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -14,7 +14,9 @@ namespace CFApp
 	{
 		public MarcarConsulta ()
 		{
+
 			InitializeComponent ();
 		}
+
 	}
 }

@@ -7,7 +7,7 @@
             <Label Text="Minhas Consultas"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-        
+             
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
