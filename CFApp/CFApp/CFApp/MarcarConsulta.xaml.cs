@@ -9,14 +9,16 @@ using Xamarin.Forms.Xaml;
 
 namespace CFApp
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MarcarConsulta : ContentPage
-	{
-		public MarcarConsulta ()
-		{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MarcarConsulta : ContentPage
+    {
+        public MarcarConsulta()
+        {
 
-			InitializeComponent ();
-		}
+            InitializeComponent();
 
+
+        }
+             
 	}
 }

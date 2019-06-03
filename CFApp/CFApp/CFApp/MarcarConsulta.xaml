@@ -6,25 +6,26 @@
         
         
         <StackLayout>
-            <Picker x:Name="pckPosto" HorizontalOptions="FillAndExpand" Title="Selecione o Posto">
+            <Picker  x:Name="pckPosto" HorizontalOptions="FillAndExpand" Title="Selecione a Unidade Basica">
                 <Picker.Items>
-                    <x:String>Posto 26 de Agosto</x:String>
-                    <x:String>Posto Coronel Antonino</x:String>
-                    <x:String>Posto Nova Bahia</x:String>
+                    <x:String>UBS 26 de Agosto</x:String>
+                    <x:String>UBS Coronel Antonino</x:String>
+                    <x:String>UBS Nova Bahia</x:String>
+                    <x:String>UBS Vila Carvalho</x:String>
                 </Picker.Items>
                    </Picker>
             
-            <Picker x:Name="TipodeConsulta" HorizontalOptions="FillAndExpand" Title="Selecione o Tipo de Consulta"  >
-                <Picker.Items>
+            <Picker  x:Name="TipodeConsulta" HorizontalOptions="FillAndExpand" Title="Selecione o Tipo de Consulta"  >
+                <Picker.Items  >
                     <x:String>Clinico Geral</x:String>
                     <x:String>Pediatra</x:String>
                     <x:String>Ginecologista</x:String>
                     <x:String>Odontolista</x:String>
                 </Picker.Items>
             </Picker>
-            
-            <DatePicker />
-            <TimePicker />
+
+            <DatePicker ></DatePicker>
+                    <TimePicker />
             
             <Button   Text="Marcar" />
         </StackLayout>

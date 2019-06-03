@@ -11,7 +11,7 @@
     <StackLayout VerticalOptions="StartAndExpand">
 
         <maps:Map x:Name="Mapa" MapType="Street" HeightRequest="600" 
-              VerticalOptions="FillAndExpand" 
-              IsShowingUser="true" />
+              VerticalOptions="FillAndExpand"/>
+                  <!--IsShowingUser="true-->
     </StackLayout>
 </ContentPage>

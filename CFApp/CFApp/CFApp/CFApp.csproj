@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Xam.Plugin.Geolocator" Version="4.6.0-beta" />
+    <PackageReference Include="Xamanimation" Version="1.2.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="4.0.0.425677" />
   </ItemGroup>

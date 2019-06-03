@@ -17,18 +17,45 @@ namespace CFApp
 			InitializeComponent ();
 
             Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
-                             new Position(-23.4859591, -47.4420192),
-                             Distance.FromMiles(0.5)));
+                            new Position(-23.4859591, -54.610099),
+                             Distance.FromMiles(10)));
 
             var pin = new Pin
             {
-                Type = PinType.Place,
-                Position = new Position(-23.4859591, -47.4420192),
-                Label = "Demo Maps",
-                Address = "www.julianocustodio.com",
+               Type = PinType.SearchResult,
+               Position = new Position(-20.443668, -54.6177232),
+              Label = "UBS",
+               Address = "26 DE AGOSTO",
+            };
+
+            var pin1 = new Pin
+            {
+                Type = PinType.SearchResult,
+                Position = new Position(-20.431316, -54.599433),
+                Label = "UBS",
+                Address = "Coronel Antonino",
+            };
+
+            var pin2 = new Pin
+            {
+                Type = PinType.SearchResult,
+                Position = new Position(-20.410378, -54.572102),
+                Label = "UBS",
+                Address = "Nova Bahia",
+            };
+
+            var pin3 = new Pin
+            {
+                Type = PinType.SearchResult,
+                Position = new Position(-20.475270, -54.621885),
+                Label = "UBS",
+                Address = "Vila Carvalho",
             };
 
             Mapa.Pins.Add(pin);
+            Mapa.Pins.Add(pin1);
+            Mapa.Pins.Add(pin2);
+            Mapa.Pins.Add(pin3);
         }
 	}
 }
