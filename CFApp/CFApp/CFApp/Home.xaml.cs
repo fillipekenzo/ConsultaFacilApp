@@ -17,8 +17,8 @@ namespace CFApp
 			InitializeComponent ();
 
             Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
-                            new Position(-23.4859591, -54.610099),
-                             Distance.FromMiles(10)));
+                            new Position(-20.443668, -54.6177232),
+                             Distance.FromMiles(0.5)));
 
             var pin = new Pin
             {
