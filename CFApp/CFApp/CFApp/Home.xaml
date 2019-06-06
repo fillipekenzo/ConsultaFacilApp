@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:local="clr-namespace:CFApp"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
-             x:Class="CFApp.Home" Title="Home">
+             x:Class="CFApp.Home" Title="Consultar Mapa">
 
 
 

@@ -1,13 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CFApp.MinhasConsultas" Title="Minhas Consultas">
+    
     <ContentPage.Content>
+        
+        
+        
         <StackLayout>
-            <Label Text="Minhas Consultas"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-             
+         
+
+  <Grid>
+     
+      <Grid.ColumnDefinitions>
+         
+          <ColumnDefinition Width="*" />
+       
+      </Grid.ColumnDefinitions>
+      
+      <Grid.RowDefinitions>
+          
+      <RowDefinition  Height="*"  />
+       
+      </Grid.RowDefinitions>
+  </Grid>
+
+            <Label BackgroundColor="LightGreen" Text="Consulta Marcada  17/07/2019  " Grid.Row="0" Grid.Column="0" />
+            <Label Text="UBS 26 de agosto" Grid.Row="1" Grid.Column="0" />
+            <Label Text="Pediatra" Grid.Row="1" Grid.Column="0" />
+            <Label Text="13:30" Grid.Row="1" Grid.Column="0" />
+
+            <Label BackgroundColor="LightBlue" Text="Consulta Realizada  01/05/2019  " Grid.Row="0" Grid.Column="0" />
+            <Label Text="UBS 26 de agosto" Grid.Row="1" Grid.Column="0" />
+            <Label Text="Pediatra" Grid.Row="1" Grid.Column="0" />
+            <Label Text="14:00" Grid.Row="1" Grid.Column="0" />
+
+            <Label BackgroundColor="LightBlue" Text="Consulta Realizada  04/04/2019  " Grid.Row="0" Grid.Column="0" />
+            <Label Text="UBS Coronel Antonino" Grid.Row="1" Grid.Column="0" />
+            <Label Text="Odontologista" Grid.Row="1" Grid.Column="0" />
+            <Label Text="15:00" Grid.Row="1" Grid.Column="0" />
+
+            <Label BackgroundColor="LightBlue" Text="Consulta Realizada  10/01/2019  " Grid.Row="0" Grid.Column="0" />
+            <Label Text="UBS 26 de agosto" Grid.Row="1" Grid.Column="0" />
+            <Label Text="Pediatra" Grid.Row="1" Grid.Column="0" />
+            <Label Text="14:20" Grid.Row="1" Grid.Column="0" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
