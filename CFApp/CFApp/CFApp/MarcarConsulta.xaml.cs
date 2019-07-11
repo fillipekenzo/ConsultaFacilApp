@@ -17,7 +17,7 @@ namespace CFApp
         ConsultaService consultaService;
         MedicoService medicoService;
         PostoService postoService;
-        TipoConsultaService tipoConsulta;
+        TipoConsultaService tipoConsultaService;
         List<Consulta> consultas;
         List<Medico> medicos;
         List<Posto> postos;
@@ -26,6 +26,34 @@ namespace CFApp
         {
             InitializeComponent();
             consultaService = new ConsultaService();
-        }         
-	}
+            medicoService = new MedicoService();
+            postoService = new PostoService();
+            tipoConsultaService = new TipoConsultaService();
+        }
+        private async void btnMarcarConsulta(object sender, EventArgs e)
+        {
+
+            Consulta consulta = new Consulta
+            {
+
+            };
+
+
+            //await dataService.AddProdutoAsync(novoProduto);
+            //LimpaProduto();
+            //AtualizaDados();
+
+
+        }
+        private async Task<List<Medico>> ListarMedicos(object sender, EventArgs e)
+        {
+
+            medicos = await medicoService.GetMedicoAsync();
+            return medicos;
+
+        }
+
+    }
+
 }
+

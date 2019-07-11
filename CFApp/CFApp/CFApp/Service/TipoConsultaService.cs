@@ -7,15 +7,15 @@ using Newtonsoft.Json;
 
 namespace CFApp.Service
 {
-    public class TipoConsulta
+    public class TipoConsultaService
     {
         string url = "https://localhost:44315/api/TipoConsulta";
         HttpClient client = new HttpClient();
-        public async Task<List<TipoConsulta>> GetTipoConsultasAsync()
+        public async Task<List<TipoConsultaService>> GetTipoConsultasAsync()
         {
 
             var response = await client.GetStringAsync(url);
-            var tipoConsultas = JsonConvert.DeserializeObject<List<TipoConsulta>>(response);
+            var tipoConsultas = JsonConvert.DeserializeObject<List<TipoConsultaService>>(response);
             return tipoConsultas;
 
         }

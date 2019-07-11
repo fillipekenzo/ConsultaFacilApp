@@ -6,7 +6,7 @@
 
 
         <StackLayout>
-            <Picker  x:Name="pckPosto" HorizontalOptions="FillAndExpand" Title="Selecione a Unidade Basica">
+            <Picker x:Name="entryPosto" HorizontalOptions="FillAndExpand" Title="Selecione a Unidade Basica" >
                 <Picker.Items>
                     <x:String>UBS 26 de Agosto</x:String>
                     <x:String>UBS Coronel Antonino</x:String>
@@ -15,7 +15,7 @@
                 </Picker.Items>
             </Picker>
 
-            <Picker  x:Name="TipodeConsulta" HorizontalOptions="FillAndExpand" Title="Selecione o Tipo de Consulta"  >
+            <Picker  x:Name="entryTipodeConsulta" HorizontalOptions="FillAndExpand" Title="Selecione o Tipo de Consulta"  >
                 <Picker.Items  >
                     <x:String>Clinico Geral</x:String>
                     <x:String>Pediatra</x:String>
@@ -23,7 +23,14 @@
                     <x:String>Odontolista</x:String>
                 </Picker.Items>
             </Picker>
-
+            <Picker ItemsSource="{x:Static local:MarcarConsulta.ListarMedicos}" ItemDisplayBinding="{Binding Nome}" x:Name="entryMedico" HorizontalOptions="FillAndExpand" Title="Selecione o Tipo de Consulta"  >
+                <Picker.Items  >
+                    <x:String>Clinico Geral</x:String>
+                    <x:String>Pediatra</x:String>
+                    <x:String>Ginecologista</x:String>
+                    <x:String>Odontolista</x:String>
+                </Picker.Items>
+            </Picker>
             <DatePicker></DatePicker>
             <TimePicker/>
 
