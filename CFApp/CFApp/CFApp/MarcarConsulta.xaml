@@ -39,7 +39,7 @@
                 HorizontalOptions="Center"
              />
 
-            <!--<Button   Text="Marcar" />-->
+            <!--<Button  Text="Marcar" />-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
